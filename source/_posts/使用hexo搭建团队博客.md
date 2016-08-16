@@ -52,7 +52,7 @@ tags:
 
   通过 github desktop工具不是很好用，所以，我还是通过console控制台提交了
 
-  几个命令:git status ,git add * ,git commit -a "fir " ,git push
+  几个命令:git status ,git add * ,git commit -m "fir " ,git push
 
   提交代码的时候需要删除部分文件中的.git之类的文件
 
@@ -137,5 +137,5 @@ tags:
   s.parentNode.insertBefore(hm, s);
   })();
   </script>
-  
+
 ```
