@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>使用hexo搭建团队博客 | 你是我的眼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="hexo" />
+    
+    <meta name="description" content="技术选型：hexo + hueman 主题(其他的主题也可以尝试，当然也可以基于hueman主题进行修改)。
+另一方面,代码在github上，由组内成员一同维护。
+申请团队的github账号   邮箱：waitforarain@126.com
+   密码：*
+   github账号：注册邮箱，waitforarain@126.com 密码，*
+项目搭建以及使用a.项目的初始化  这一步的是我建立项">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo搭建团队博客">
+<meta property="og:url" content="http://yoursite.com/2016/08/06/使用hexo搭建团队博客/index.html">
+<meta property="og:site_name" content="你是我的眼">
+<meta property="og:description" content="技术选型：hexo + hueman 主题(其他的主题也可以尝试，当然也可以基于hueman主题进行修改)。
+另一方面,代码在github上，由组内成员一同维护。
+申请团队的github账号   邮箱：waitforarain@126.com
+   密码：*
+   github账号：注册邮箱，waitforarain@126.com 密码，*
+项目搭建以及使用a.项目的初始化  这一步的是我建立项">
+<meta property="og:image" content="http://litterfox.github.io/images/hexo_img.jpg">
+<meta property="og:updated_time" content="2016-08-16T07:28:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用hexo搭建团队博客">
+<meta name="twitter:description" content="技术选型：hexo + hueman 主题(其他的主题也可以尝试，当然也可以基于hueman主题进行修改)。
+另一方面,代码在github上，由组内成员一同维护。
+申请团队的github账号   邮箱：waitforarain@126.com
+   密码：*
+   github账号：注册邮箱，waitforarain@126.com 密码，*
+项目搭建以及使用a.项目的初始化  这一步的是我建立项">
+<meta name="twitter:image" content="http://litterfox.github.io/images/hexo_img.jpg">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/titillium-web/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
+    
+    
+        <link rel="stylesheet" href="/vendor/scrollLoading/style.css">
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?69740646c0e72f33a470f1da53da89bc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/categories/jser">前端开发</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/categories/conser">后台开发</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/categories/other">其他部分</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about">关于</a>
+                                </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/jser/">jser</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-使用hexo搭建团队博客" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        使用hexo搭建团队博客
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2016/08/06/使用hexo搭建团队博客/" class="article-date">
+    <time datetime="2016-08-05T16:00:00.000Z" itemprop="datePublished">2016-08-06</time>
+</a>
+
+
+                 <p  style="float: left;color:#aaa;"> &nbsp; &nbsp;陈慢慢 &nbsp; &nbsp;发表于&nbsp; &nbsp;</p>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+            </div>
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>技术选型：hexo + hueman 主题(其他的主题也可以尝试，当然也可以基于hueman主题进行修改)。</p>
+<p>另一方面,代码在github上，由组内成员一同维护。</p>
+<h2 id="申请团队的github账号"><a href="#申请团队的github账号" class="headerlink" title="申请团队的github账号"></a>申请团队的github账号</h2><p>   邮箱：waitforarain@126.com</p>
+<p>   密码：<strong><em>*</em></strong></p>
+<p>   github账号：注册邮箱，waitforarain@126.com 密码，<strong><em>*</em></strong></p>
+<h2 id="项目搭建以及使用"><a href="#项目搭建以及使用" class="headerlink" title="项目搭建以及使用"></a>项目搭建以及使用</h2><h3 id="a-项目的初始化"><a href="#a-项目的初始化" class="headerlink" title="a.项目的初始化"></a>a.项目的初始化</h3><p>  这一步的是我建立项目的步骤，我这边大致做了一些笔记。</p>
+<p>  mac 环境下(node,git,hexo环境已有) ，在桌面建立一个文件夹 team/hexo</p>
+<p>  npm install hexo-cli -g</p>
+<p>  hexo init /Users/chenyazheng/desktop/team/hexo</p>
+<p>  cd hexo</p>
+<p>  npm install</p>
+<p>  hexo server</p>
+<p>  主题的切换：</p>
+<p>  git clone <a href="https://github.com/ppoffice/hexo-theme-hueman.git" target="_blank" rel="external">https://github.com/ppoffice/hexo-theme-hueman.git</a> themes/hueman</p>
+<p>  注:mac 的console中会记住，github的账号密码，切换账号时需要在钥匙串中进行修改</p>
+<h3 id="b-提交项目到github上"><a href="#b-提交项目到github上" class="headerlink" title="b.提交项目到github上"></a>b.提交项目到github上</h3><p>  通过 github desktop工具不是很好用，所以，我还是通过console控制台提交了</p>
+<p>  几个命令:git status ,git add * ,git commit -m “fir “ ,git push</p>
+<p>  提交代码的时候需要删除部分文件中的.git之类的文件</p>
+<h3 id="c-在windonw环境下配置开发环境，以及获取代码"><a href="#c-在windonw环境下配置开发环境，以及获取代码" class="headerlink" title="c.在windonw环境下配置开发环境，以及获取代码"></a>c.在windonw环境下配置开发环境，以及获取代码</h3><p>  node: 安装exe文件</p>
+<p>  git环境: 执行git的安装文件就可以,之后的操作文件的下载上上传都是通过git shell进行就可以</p>
+<p>  hexo环境: 从github上拉取代码,<a href="https://github.com/litterFox/hexoblog.git" target="_blank" rel="external">https://github.com/litterFox/hexoblog.git</a></p>
+<p>  注意的几个hexo的命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">hexo clean 清除本地数据</div><div class="line"></div><div class="line">hexo g 通过模板，生成静态文件</div><div class="line"></div><div class="line">hexo s 部署到本地 ，默认访问地址是 localhost:4000</div><div class="line"></div><div class="line">hexo deploy 将本地的静态文件上传到github上去，部署成功之后，我们就可以通过litterFox.github.io访问了</div><div class="line"></div><div class="line">hexo new <span class="string">" test post"</span> 生成新的博客文章，博客文章都是通过markdown语法来编写的，这边生成的是.md源文件</div></pre></td></tr></table></figure>
+<p>  至此：在windows上的基本操作，已经没有问题。</p>
+<h3 id="d-团队使用的方法"><a href="#d-团队使用的方法" class="headerlink" title="d.团队使用的方法"></a>d.团队使用的方法</h3><p>  团队成员使用同一份hexo基础工程, hexo new “new post”之后，会在source中生成”new post”这样的一个文件，之后需要通过git shell将文件提交上去。</p>
+<p>  特别需要注意的是：在修改之前，一定要获取一次最新的代码，git pull操作，修改之后，先本地跑一遍，没有问题的情况下，将代码提交到github上，提交的关键是在于，那先博文的.md文件。</p>
+<p>  因为代码共享，所以组内的每一个人都有获取，提交，部署的权限。此外，要注意的是数据的备份，以及提交的时候，需要谨慎一些。</p>
+<h2 id="关于hueman的主题的修改"><a href="#关于hueman的主题的修改" class="headerlink" title="关于hueman的主题的修改"></a>关于hueman的主题的修改</h2><p>  一开始的时候，hueman主题给我们的感觉的还不是很完善，并不是十分的满足我们的需求，于是，就针对hueman进行了部分的配置和修改。</p>
+<h3 id="a-修改导航栏"><a href="#a-修改导航栏" class="headerlink" title="a.修改导航栏"></a>a.修改导航栏</h3><p>  吐槽：hueman的样式配置目前来看不如next的配置方便 这边的导航条的配置我仿照了淘宝FED的模块设置做了修改。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Home: /</div><div class="line"></div><div class="line">category_jser: /categories/jser</div><div class="line"></div><div class="line">category_conser: /categories/conser</div><div class="line"></div><div class="line">category_other: /categories/other</div><div class="line"></div><div class="line">about: /about</div></pre></td></tr></table></figure>
+<h3 id="b-添加关于我们这一页"><a href="#b-添加关于我们这一页" class="headerlink" title="b.添加关于我们这一页"></a>b.添加关于我们这一页</h3><p>  添加了团队介绍，以及版本的介绍。</p>
+<h3 id="c-添加评论"><a href="#c-添加评论" class="headerlink" title="c.添加评论"></a>c.添加评论</h3><p>  多说：<a href="http://litterfox.duoshuo.com" target="_blank" rel="external">http://litterfox.duoshuo.com</a>  (多说域名)</p>
+<p>  duoshuo短语: litterfox</p>
+<h3 id="d-添加第三方统计"><a href="#d-添加第三方统计" class="headerlink" title="d.添加第三方统计"></a>d.添加第三方统计</h3><p>  使用的是百度统计：账号,litterfox 密码,123456all!</p>
+<p>  百度统计：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var _hmt = _hmt || [];</div><div class="line">(<span class="function"><span class="title">function</span></span>() &#123;</div><div class="line">var hm = document.createElement(<span class="string">"script"</span>);</div><div class="line">hm.src = <span class="string">"//hm.baidu.com/hm.js?69740646c0e72f33a470f1da53da89bc"</span>;</div><div class="line">var s = document.getElementsByTagName(<span class="string">"script"</span>)[0];</div><div class="line">s.parentNode.insertBefore(hm, s);</div><div class="line">&#125;)();</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2016/08/06/使用hexo搭建团队博客/" data-id="cis143jlr0000c04g3jb64tmt" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="2016/08/06/使用hexo搭建团队博客/" data-title="使用hexo搭建团队博客" data-url="http://yoursite.com/2016/08/06/使用hexo搭建团队博客/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/litterFox" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="http://weibo.com/p/1005052435279412/home?from=page_100505_profile&wvr=6&mod=data&is_all=1#place" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/08/15/one-day/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            one day
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/08/15/one-day/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://chenmanman.github.io/images/oneday/oneday.jpg)" alt="one day" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-title"><a href="/2016/08/15/one-day/" class="title">one day</a></p>
+
+                            <p class="item-title" style="font-size: 12px;"> by &nbsp; &nbsp;陈慢慢</p>
+
+                            <p class="item-date"><time datetime="2016-08-14T16:00:00.000Z" itemprop="datePublished">at &nbsp; &nbsp;2016-08-15</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/08/06/使用hexo搭建团队博客/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://litterfox.github.io/images/hexo_img.jpg)" alt="使用hexo搭建团队博客" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-title"><a href="/2016/08/06/使用hexo搭建团队博客/" class="title">使用hexo搭建团队博客</a></p>
+
+                            <p class="item-title" style="font-size: 12px;"> by &nbsp; &nbsp;陈慢慢</p>
+
+                            <p class="item-date"><time datetime="2016-08-05T16:00:00.000Z" itemprop="datePublished">at &nbsp; &nbsp;2016-08-06</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/jser/">jser</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/">other</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代码之外/">代码之外</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/代码之外/" style="font-size: 10px;">代码之外</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://blog.javachen.com/">JavaChen Blog</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://f2e.souche.com/blog/">大搜车团队</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2016 litterfox</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'litterfox'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+    
+        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+    
+        <script src="/vendor/scrollLoading/jquery.scrollLoading.js"></script>
+        <script src="/vendor/scrollLoading/main.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
